@@ -1,0 +1,304 @@
+.app {
+  display: flex;
+  justify-content: center;
+}
+.app .container {
+  width: 1800px;
+}
+.app .container .link {
+  text-decoration: none;
+  color: inherit;
+}
+.app .container .auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.app .container h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.app .container form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: white;
+  width: 300px;
+  gap: 20px;
+}
+.app .container form input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid gainsboro;
+}
+.app .container form button {
+  padding: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.app .container form p {
+  font-size: 12px;
+  color: red;
+  text-align: center;
+}
+.app .container form span {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.app .container .navbar .container {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.app .container .navbar .container .links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.app .container .navbar .container .links h6 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.app .container .navbar .container .links span {
+  cursor: pointer;
+}
+.app .container .navbar .container .links .write {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  color: gainsboro;
+  border: 1px solid black;
+}
+.app .container .navbar .container .links .write:hover {
+  background-color: gainsboro;
+  color: black;
+  border: 1px solid black;
+}
+.app .container footer {
+  margin-top: 100px;
+  padding: 20px;
+  background-color: gainsboro;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.app .container .home .posts {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+.app .container .home .posts .post {
+  display: flex;
+  gap: 100px;
+}
+.app .container .home .posts .post:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
+.app .container .home .posts .post .img {
+  flex: 2;
+  position: relative;
+}
+.app .container .home .posts .post .img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: gainsboro;
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  z-index: -1;
+}
+.app .container .home .posts .post .img img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+.app .container .home .posts .post .content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.app .container .home .posts .post .content h1 {
+  font-size: 48px;
+}
+.app .container .home .posts .post .content p {
+  font-size: 18px;
+}
+.app .container .home .posts .post .content button {
+  width: max-content;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid black;
+}
+.app .container .home .posts .post .content button:hover {
+  border: 1px solid black;
+  color: white;
+  background-color: black;
+}
+.app .container .single {
+  display: flex;
+  gap: 50px;
+}
+.app .container .single .content {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.app .container .single .content img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.app .container .single .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.app .container .single .user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.app .container .single .user span {
+  font-weight: bold;
+}
+.app .container .single .edit {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+.app .container .single .edit img {
+  width: 40px;
+  height: 40px;
+}
+.app .container .single h1 {
+  font-size: 42px;
+}
+.app .container .single p {
+  text-align: justify;
+  line-height: 30px;
+}
+.app .container .single .menu {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.app .container .single .menu h1 {
+  font-size: 20px;
+  color: #555;
+}
+.app .container .single .menu .post {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.app .container .single .menu img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.app .container .single .menu h2 {
+  color: #555;
+}
+.app .container .single .menu button {
+  width: max-content;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid black;
+}
+.app .container .single .menu button:hover {
+  border: 1px solid black;
+  color: white;
+  background-color: black;
+}
+.app .container .add {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.app .container .content {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.app .container .content input {
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+.app .container .content .editorContainer {
+  height: 240px;
+}
+.app .container .content .editorContainer .editor {
+  height: 100%;
+  border: none;
+}
+.app .container .menu {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.app .container .menu .item {
+  border: 1px solid lightgray;
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #555;
+}
+.app .container .menu .item h1 {
+  font-size: 20px;
+}
+.app .container .menu .item label {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.app .container .menu .item .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.app .container .menu .item .buttons :first-child {
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 3px 5px;
+}
+.app .container .menu .item .buttons :last-child {
+  cursor: pointer;
+  background-color: black;
+  border: 1px solid black;
+  padding: 3px 5px;
+  color: white;
+}
+.app .container .menu .item .cat {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  color: #555;
+}
+
+/*# sourceMappingURL=index.css.map */
