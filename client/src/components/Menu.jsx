@@ -26,8 +26,8 @@ const Menu = ({cat}) =>{
             <img src={`http://localhost:8800/upload/${post.img}`} alt="" />
             <h2>{post.title}</h2>
             <Link className='link' to ={`/post/${post.id}`}>
-                    <button>Read More</button>
-                    </Link>
+            <button>Read More</button>
+            </Link>
         </div>
     ))}
     </div>)

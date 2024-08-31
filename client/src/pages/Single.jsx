@@ -5,8 +5,6 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Menu from "../components/Menu";
 import axios from "axios";
 import moment from "moment";
-import { useContext } from "react";
-import { AuthContext } from "../context/authContext";
 
 const Single = () => {
   const [post, setPost] = useState({});
@@ -16,7 +14,7 @@ const Single = () => {
 
   const postId = location.pathname.split("/")[2];
 
-  const { currentUser } = useContext(AuthContext);
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -54,17 +52,17 @@ const Single = () => {
             alt=""
           />}
           <div className="info">
-            <span>{post.username}</span>
+          <span>{post.username}</span>
             <p>Posted {moment(post.date).fromNow()}</p>
           </div>
-          {currentUser.username === post.username && (
+          
             <div className="edit">
               <Link to={`/write?edit=2`} state={post}>
                 <img src={Edit} alt="" />
               </Link>
               <img onClick={handleDelete} src={Delete} alt="" />
             </div>
-          )}
+          
         </div>
         <h1>{post.title}</h1>
         <p>{getText(post.desc)}</p>      </div>
